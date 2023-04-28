@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * main: runs the _printf function
@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	_printf("Hello, %s!\n", "world");
+	_printf("%S\n", "Best\nSchool");
 	return (0);
 }
 
