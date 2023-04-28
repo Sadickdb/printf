@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * prinhint - prints a short integer
+ * print_short_int - prints a short integer
  * @arguments: input string
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed.
  */
-int prinhint(va_list arguments, char *buf, unsigned int ibuf)
+int print_short_int(va_list arguments, char *buf, unsigned int ibuf)
 {
 	short int int_input;
 	unsigned short int int_in, int_temp, i, div, isneg;

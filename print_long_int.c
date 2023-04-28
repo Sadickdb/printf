@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * prinlint - prints a long integer
+ * print_long_int - prints a long integer
  * @arguments: input string
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed.
  */
-int prinlint(va_list arguments, char *buf, unsigned int ibuf)
+int print_long_int(va_list arguments, char *buf, unsigned int ibuf)
 {
 	long int int_input;
 	unsigned long int int_in, int_temp, i, div, isneg;
@@ -37,3 +37,4 @@ int prinlint(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	return (i + isneg);
 }
+

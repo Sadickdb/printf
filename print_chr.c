@@ -1,5 +1,6 @@
+#include <stdarg.h>
 #include "main.h"
-#include <stdio.h>
+
 /**
  * print_chr - writes the character c to stdout
  * @arguments: input char
@@ -12,7 +13,8 @@ int print_chr(va_list arguments, char *buf, unsigned int ibuf)
 	char c;
 
 	c = va_arg(arguments, int);
-	handl_buf(buf, c, ibuf);
+	ibuf = handl_buf(buf, c, ibuf);
 
 	return (1);
 }
+

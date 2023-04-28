@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * prinlhex - prints a long decimal in hexadecimal
+ * print_long_hex - prints a long decimal in hexadecimal
  * @arguments: input string
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed
  */
-int prinlhex(va_list arguments, char *buf, unsigned int ibuf)
+int print_long_hex(va_list arguments, char *buf, unsigned int ibuf)
 {
 	long int int_input, i, isnegative, count, first_digit;
 	char *hexadecimal, *binary;
@@ -42,3 +42,4 @@ int prinlhex(va_list arguments, char *buf, unsigned int ibuf)
 	free(hexadecimal);
 	return (count);
 }
+

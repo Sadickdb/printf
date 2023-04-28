@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * prinhupx - prints a short decimal in hexadecimal
+ * print_short_upx - prints a short decimal in hexadecimal
  * @arguments: The character to print
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed
  */
-int prinhupx(va_list arguments, char *buf, unsigned int ibuf)
+int print_short_upx(va_list arguments, char *buf, unsigned int ibuf)
 {
 	short int int_input, i, isnegative, count, first_digit;
 	char *hexadecimal, *binary;

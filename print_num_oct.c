@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * prinnoct - print the number in octal begining with zero
+ * print_num_oct - print the number in octal begining with zero
  * @arguments: input string
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed
  */
-int prinnoct(va_list arguments, char *buf, unsigned int ibuf)
+int print_num_oct(va_list arguments, char *buf, unsigned int ibuf)
 {
 	int int_input, i, isnegative, count, first_digit;
 	char *octal, *binary;
